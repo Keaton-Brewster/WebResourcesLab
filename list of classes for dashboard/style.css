@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 14px;
+  overflow-x: hidden;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+#root {
+  height: 100%;
+  padding: 25px;
+  padding-right: 100px;
+}
+
+#class-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+button {
+  border: none;
+  margin-top: 5px;
+  margin-left: 5px;
+  border-radius: 35px;
+  padding: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #d6d9de;
+}
+
+button:hover {
+  cursor: pointer;
+  color: rgb(86, 86, 255);
+  background-color: #b8bbbe;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  padding: 5px;
+}
+
+.grid-item {
+  padding: 5px;
+  font-size: 20px;
+}
+
+.sub-grid-item {
+  margin-left: -15px;
+  margin-top: -15px;
+}
+
+.class-card {
+  display: flexbox;
+  position: relative;
+  margin: 1em;
+  padding: 25px;
+  border: 3px solid #a4c7ff;
+  border-radius: 23px;
+  background-color: #f7faff;
+}
+
+.location {
+  margin-top: auto;
+}
+
+.location-title {
+  font-size: 16px;
+}
+
+.all-active-classes-header {
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.credits {
+  margin-left: auto;
+}
+
+.class-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.instructor-name {
+  font-size: 14px;
+  color: grey;
+}
+
+.dates {
+  margin: auto;
+  margin-right: -10px;
+  margin-bottom: -10px;
+  color: grey;
+}
+
+.dates-value {
+  color: black;
+}
+
+.credits {
+  margin-left: auto;
+  text-transform: lowercase;
+  font-size: 13px;
+  color: grey;
+}
+
+.credits-value {
+  color: black;
+}

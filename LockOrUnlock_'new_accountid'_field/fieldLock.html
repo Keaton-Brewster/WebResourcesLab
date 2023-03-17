@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button
+      id="toggle-button"
+      name="toggle field lock"
+      title="Toggle lock/unlock the field"
+      onclick="ToggleLock()"
+    >
+      Toggle Field Lock
+    </button>
+
+    <script>
+      window.parentExecutionContext = null;
+      window.parentFormContext = null;
+
+      function InitButton(executionContext) {
+        window.parentExecutionContext = executionContext;
+        window.parentFormContext = executionContext.getFormContext();
+      }
+
+      function ToggleLock() {
+        const fieldname = "new_accountid";
+        const ctrl = window.parentFormContext.getControl(fieldname);
+        let isLocked = ctrl.getDisabled();
+        ctrl.setDisabled(!isLocked);
+      }
+    </script>
+  </body>
+</html>
